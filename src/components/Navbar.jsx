@@ -29,11 +29,11 @@ const Navbar = () => {
            <div className="d-flex align-items-center justify-content-center" style={navStyle}>
                <div style={logosty}></div>
            </div>
-            <div className="text-danger">You</div>Tube
+            You<div className="text-danger">Tube <span style={{fontSize:'8px',color:'#000000'}}>mini</span></div>
          </div>
         </a>
         <SearchBar/>
-      </div>
+      </div> 
     </nav>
   );
 };
