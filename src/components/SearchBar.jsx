@@ -1,13 +1,4 @@
 const SearchBar = () => {
-  const height = {
-    height:"30px"
-  };
-  const barSizing={
-        marginRight:"10%",
-  }
-  const srcSizing={
-    width:"20rem"
-  }
   return (
     <form className="d-flex" style={barSizing} role="search">
       <input
@@ -15,7 +6,7 @@ const SearchBar = () => {
         type="text"
         placeholder="Search"
         aria-label="Search"
-        style={{...height, ...srcSizing}}
+        style={{ ...height, ...srcSizing }}
       />
       <button
         className="btn border-secondary rounded-0 border-start-0 rounded-end-pill d-flex justify-content-center align-items-center bg-white"
@@ -37,4 +28,14 @@ const SearchBar = () => {
   );
 };
 
+const height = {
+  height: "30px",
+};
+const barSizing = {
+  marginRight: "8%",
+};
+const srcSizing = {
+    maxWidth:"20rem",
+  width: "75vw",
+};
 export default SearchBar;
