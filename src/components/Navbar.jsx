@@ -1,30 +1,37 @@
-const Navbar =()=>{
-    return ( 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    )
+const Navbar = () => {
+  const navStyle = {
+    backgroundColor: "#ff0000",
+    width: "30px",
+    height: "20px",
+    borderRadius: "22%",
+    aspectRatio: "3/2",
+    clipPath: "ellipse(100% 50%)",
+    display: "inline-block",
+    marginRight: "4px",
+    fontWamily: "'Roboto', sans-serif",
+    fontWeight: "500",
+  };
+  const logosty={
+    width: "5px",
+    height: "5px",
+    backgroundColor: "#ffffff",
+    display: "inline-block",
+    clipPath: "polygon(100% 50%, 0 0, 0 100%)",
+  }
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <a className="navbar-brand text-black" href="#">
+          <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center justify-content-center" style={navStyle}>
+                <div style={logosty}></div>
+            </div>
+            <div className="text-danger">You</div>Tube
+          </div>
+        </a>
+      </div>
+    </nav>
+  );
 };
 
-export default Navbar
+export default Navbar;
