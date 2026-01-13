@@ -1,3 +1,5 @@
+import SearchBar from "./SearchBar";
+
 const Navbar = () => {
   const navStyle = {
     backgroundColor: "#ff0000",
@@ -8,27 +10,29 @@ const Navbar = () => {
     clipPath: "ellipse(100% 50%)",
     display: "inline-block",
     marginRight: "4px",
-    fontWamily: "'Roboto', sans-serif",
+    fontFamily: "'Roboto', sans-serif",
     fontWeight: "500",
   };
-  const logosty={
+  const logosty = {
     width: "5px",
     height: "5px",
     backgroundColor: "#ffffff",
     display: "inline-block",
     clipPath: "polygon(100% 50%, 0 0, 0 100%)",
-  }
+  };
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
-        <a className="navbar-brand text-black" href="#">
-          <div className="d-flex align-items-center">
-            <div className="d-flex align-items-center justify-content-center" style={navStyle}>
-                <div style={logosty}></div>
-            </div>
+    
+    <nav class="navbar bg-body-tertiary" href="#" >
+      <div class="container-fluid">
+        <a class="navbar-brand">
+        <div className="d-flex align-items-center">
+           <div className="d-flex align-items-center justify-content-center" style={navStyle}>
+               <div style={logosty}></div>
+           </div>
             <div className="text-danger">You</div>Tube
-          </div>
+         </div>
         </a>
+        <SearchBar/>
       </div>
     </nav>
   );
