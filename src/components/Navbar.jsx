@@ -1,12 +1,12 @@
 import SearchBar from "./SearchBar";
 
-const Navbar = () => {
- 
+const Navbar = ({handleSearch}) => {
+    
   return (
     
-    <nav class="navbar bg-body-tertiary" href="#" >
-      <div class="container-fluid">
-        <a class="navbar-brand">
+    <nav className="navbar bg-body-tertiary" href="#" >
+      <div className="container-fluid">
+        <a className="navbar-brand">
         <div className="d-flex align-items-center">
            <div className="d-flex align-items-center justify-content-center" style={navStyle}>
                <div style={logosty}></div>
@@ -15,7 +15,7 @@ const Navbar = () => {
          </div>
         </a>
         
-        <SearchBar/>
+        <SearchBar handleSearch={handleSearch} />
       </div> 
     </nav>
   );

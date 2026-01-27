@@ -12,7 +12,7 @@ const SearchBar = (handleSearch) => {
         className="border border-secondary border-end rounded-start-pill ps-3 "
         type="text"
         placeholder="Search"
-        aria-label="Recipient’s usernameSearch"
+        aria-label="Recipient’s username"
         style={{ ...height, ...srcSizing }}
         value={search}
         onChange={(e) => setSearch(e.target.value)}
