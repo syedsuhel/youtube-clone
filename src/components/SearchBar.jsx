@@ -7,7 +7,7 @@ const SearchBar = (handleSearch) => {
       e.preventDefault();
       handleSearch(search)
     }}>
-      {search}
+      
       <input
         className="border border-secondary border-end rounded-start-pill ps-3 "
         type="text"
